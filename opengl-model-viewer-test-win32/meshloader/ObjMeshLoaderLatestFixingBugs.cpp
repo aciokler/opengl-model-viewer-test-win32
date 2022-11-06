@@ -324,7 +324,6 @@ void ObjMeshLoaderLatestFixingBugs::loadFromFile( const GLchar * path )
             groupIndexFacesMap.clear();
             groupNr++;
             prevGroupIndexOffset = indexOffset;
-            //printf("creating another group: %d\n", groupNr);
         }
     }
     
@@ -337,16 +336,5 @@ void ObjMeshLoaderLatestFixingBugs::loadFromFile( const GLchar * path )
     if ( currGroup )
     {
         groups->push_back( *currGroup );
-        
-        //        for ( std::vector<Face>::iterator iter = currGroup->getFaces()->begin(); iter != currGroup->getFaces()->end(); iter++)
-        //        {
-        //glm::vec3 normal = iter->normal;
-        //normal.x = normal.x / iter->normalWeight;
-        //normal.y = normal.y / iter->normalWeight;
-        //normal.z = normal.z / iter->normalWeight;
-        
-        //normal = glm::normalize(normal);
-        //iter->normal = normal;
-        //        }
     }
 }

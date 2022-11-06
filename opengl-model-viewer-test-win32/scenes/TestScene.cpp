@@ -30,9 +30,9 @@ void TestScene::prepareScene()
     //Shape * mesh4 = new ObjMeshExperiment("Porshe_911_GT2.obj");
 	//Shape * mesh4 = new ObjMeshExperiment("models/groupTest.obj");
 	//Shape * mesh4 = new ObjMeshExperiment("models/Hogwarts2.obj");
-	//Shape * mesh4 = new ObjMeshExperiment("models/porsche.obj");
-	//Shape * mesh4 = new ObjMeshExperiment("models/091_W_Aya_100K.obj");
-	Shape * mesh4 = new ObjMeshExperiment("models/room.obj");
+	Shape * mesh4 = new ObjMeshExperiment("models/porsche.obj");
+	Shape * mesh5 = new ObjMeshExperiment("models/groupTest.obj");
+	//Shape * mesh5 = new ObjMeshExperiment("models/091_W_Aya_100K.obj");
     
     //printf("mesh addresses VBO[POSITIONS_BUFF]: %d, VBO[INDEX_BUFF]: %d, VAO[0]: %d\n", mesh->getVBOPointer(Shape::POSITIONS_BUFF), mesh->getVBOPointer(Shape::INDEX_BUFF), mesh->getVAOPointer(0) );
     //printf("mesh2 addresses VBO[POSITIONS_BUFF]: %d, VBO[INDEX_BUFF]: %d, VAO[0]: %d\n", mesh2->getVBOPointer(Shape::POSITIONS_BUFF), mesh2->getVBOPointer(Shape::INDEX_BUFF), mesh2->getVAOPointer(0) );
@@ -41,4 +41,5 @@ void TestScene::prepareScene()
     //objects.push_back( mesh2 );
     //objects.push_back(mesh3);
     objects.push_back(mesh4);
+	objects.push_back(mesh5);
 }
