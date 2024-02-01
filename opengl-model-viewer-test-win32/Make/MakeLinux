@@ -1,8 +1,9 @@
 BUILD = modelViewer
 COMMAND = g++
 FLAGS = -std=c++0x -DGL_GLEXT_PROTOTYPES -O0 -g3 -Wall -c -fmessage-length=0
-SRC = ../common/*.c ../*.cpp ../shaders/*.cpp ../meshloader/*.cpp ../scenes/*.cpp ../shapes/*.cpp
-LIBS = -lGL -lGLU -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor
+ SRC = ../common/*.c ../*.cpp ../shaders/*.cpp ../meshloader/*.cpp ../scenes/*.cpp ../shapes/*.cpp
+# LIBS = -lGL -lGLU -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor
+LIBS = -lGL -lglfw -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor
 
 all:
 	${COMMAND} ${FLAGS} ${SRC}

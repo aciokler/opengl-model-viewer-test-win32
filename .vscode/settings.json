@@ -1,0 +1,11 @@
+{
+    "makefile.makefilePath": "opengl-model-viewer-test-win32/Make/MakeLinux-vscode",
+    "makefile.buildLog": "${workspaceFolder}/opengl-model-viewer-test-wimakefile.buildLogn32/makefile.buildLog",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "${workspaceFolder}/opengl-model-viewer-test-win32",
+            "binaryPath": "${workspaceFolder}/opengl-model-viewer-test-win32/modelViewer",
+            "binaryArgs": []
+        }
+    ]
+}

@@ -24,11 +24,11 @@
 #include <map>
 #include <stdexcept>
 #include <algorithm>
-#if defined(WIN32) || defined(_WIN32) defined(__WIN32) && !defined(__CYGWIN__)
+#if defined(WIN32) || defined(_WIN32) && !defined(__CYGWIN__)
 	#include <string>
 #endif
 
-#if defined(__linux__) || defined(WIN32) || defined(_WIN32) defined(__WIN32) && !defined(__CYGWIN__)
+#if defined(__linux__) || defined(WIN32) && !defined(__CYGWIN__)
 	#include "glad.h"
 #endif
 
